@@ -1,0 +1,55 @@
+.container h1, .container p {
+    text-align: center;
+}
+.container h1, .container h1 {
+    font-size: 40px;
+}
+.container div article {
+    background-color: #ededf7;
+    border: thin;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.container div article p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+@media (min-width:576px){
+}
+@media (min-width:768px){
+	.container{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (min-width:992px){
+	.container{
+		width: 940px;
+	}
+    .container div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .container div article {
+        width: 47%;
+    }
+}
+@media (min-width:1200px){
+	.container{
+		width: 1140px;
+	}
+    .container div article {
+        width: 30%;
+    }
+}
+@media (min-width:1400px){
+	.container{
+		width: 1340px;
+	}
+
+}

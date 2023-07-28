@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pageone {
+    background: linear-gradient(to top, rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("../Images/header-bg.jpg") no-repeat center center/cover;
+    /*background-image: url("../Images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+}
+#pageone>div {
+    padding-bottom: 70px;
+}
+#pageone div>section{
+    display:flex;
+    justify-content: space-between;
+}
+#pageone header {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+nav>a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+nav>a:hover {
+    background-color: #0c4172;
+    border-radius: 10px;
+}
+#pageone header+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+#pageone article p, #pageone article h1 {
+    color: #fff;
+}
+article p, article h1, #pagesix h1 {
+    margin: 30px 0;
+}
+article h1, #pagesix h1 {
+    font-size: 40px;
+}
+section button {
+    padding: 10px 40px;
+    background-color: #f9b700;
+    color: #fff;
+}
+form button {
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+#pageone section>article {
+    margin-top: 100px;
+    width: 54%;
+}
+form h2{
+    margin-bottom: 20px;
+}
+section form {
+    color: #fff;
+    width: 40%;
+    margin-top: 5px;
+    border: thin solid #555252;
+    background-color: rgba(24, 11, 83, 0.2);
+    padding: 50px;
+}
+form select,form input {
+    width: 100%;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 5px;
+}
+.divform {
+    width: 395px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.divform select, .divform input{
+    width: 46%;
+}
+#pagetwo h1, #pagetwo p, #pagefour h1, #pagefour p {
+    text-align: center;
+    margin-top: 40px;
+}
+#pagetwo h1, #pagefour h1 {
+    font-size: 40px;
+}
+#pagetwo div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px;
+    padding: 40px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+#pagetwo div article {
+    width: 31%;
+    background-color: #ededf7;
+    margin: 1%;
+    padding: 40px;
+    border: thin;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+#pagetwo div article p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+}
+#pagethree div, #pagefour div, #pagesix div  {
+    display: flex;
+    margin: 0 60px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#pagethree img {
+    width: 50%;
+}
+#pagethree article {
+    width: 40%;
+    padding: 30px 0;
+}
+#pagethree article h1, #pagethree article h4, #pagethree article p {
+    color: #000;
+}
+#pagethree article h1 {
+    width: 80%;
+}
+#pagethree article button {
+    border-color: #f9b700;
+}
+#pagefour img{
+    width: 80%;
+}
+#pagefour article p {
+    text-align: left;
+    width: 90%;
+    margin: 10px;
+    
+}
+#pagefour article h2 {
+    margin-bottom: 40px;
+}
+#pagefour article span {
+    margin-left: 45%;
+    color: #f9b700;
+}
+#pagefour article span strong{
+    font-size: 2.5rem;
+}
+#pagefour div article button {
+    background-color: #000;
+    margin-left: 8px;
+    margin-top: 20px;
+}
+#pagefive {
+    background: linear-gradient(to top, rgba(0,0,40,0.6),rgba(0,0,40,0.6)), url("../Images/callaction-bg.jpg") no-repeat center center/cover;
+    height: 500px;
+    text-align: center;
+}
+#pagefive div {
+    padding-top: 150px;
+}
+#pagefive div h1{
+    margin: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+#pagefive div p{
+    margin: 40px;
+    padding: 0 150px;
+    color: #fff;
+}
+#pagefive div button {
+    color: #f9b700;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #f9b700;
+}
+#pagesix section {
+    width: 23%;
+    margin-top: 40px;
+}
+#pagesix section>img {
+    width: 300px;
+}
+#pagesix h1, #pagesix h3 {
+    text-align: center;
+}
+#pagesix section article {
+    margin: 20px 0;
+}
+#pagesix section article h4 {
+    background-color:#000;
+    color:#cccccc9b;
+    padding: 5px 40px;
+    display: inline-block;
+}
+#pagesix section article h2 {
+    margin-top: 20px;
+}
+#pagesix section article div {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#pagesix article div button {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #555252;
+    border: 0;
+}
+footer {
+    background-color: #04091d;
+    color: #ccc;
+    text-align: center;
+}
+footer div {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-around;
+}
+footer ol {
+    list-style: none;
+}
+footer ol a {
+    text-decoration: none;
+    color: #cccccc5c;
+}
+footer ol li , footer p{
+    margin-top: 10px;
+    color: #cccccc5c;
+}
+footer a img {
+    padding: 5px 5px 5px 0;
+    margin-top: 5px;
+}
+footer input {
+    padding: 10px;
+    margin: 20px 0 0 0;
+}
+footer button {
+    margin: 0;
+    padding: 10px;
+}
+footer div+p {
+    padding-bottom: 80px;
+}
+
