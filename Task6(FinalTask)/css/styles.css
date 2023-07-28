@@ -1,0 +1,582 @@
+:root {
+	--color1: #ffd01d;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.btn {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 0.9rem;
+	padding: 15px 25px;
+	display: inline-block;
+	border: thin solid #fff;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+#section-1 {
+	background: url("../images/Banner-bg.jpg") no-repeat top left;
+}
+
+#mainmenu {
+	background-color: #0b0f4a;
+	width: 100%;
+}
+
+#mainmenu div.container {
+	display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;
+}
+#mainmenu img {
+	height: 35px;
+	margin-right: 10px;
+}
+
+#mainmenu h4 {
+	color: #fff;
+	font-size: 1.3rem;
+	font-variant: small-caps;
+	font-weight: 900;
+	display: flex; align-items: center;
+}
+#mainmenu h4 span{
+	color: var(--color1);
+}
+#mainmenu label {
+	color: var(--color1);
+	border: 1px solid var(--color1);
+	display: inline-block;
+	padding: 0 5px 2px;
+	border-radius: 2px;
+}
+
+#menuControl, #dropdownControl-1, #dropdownControl-2, #dropdownControl-3 {
+	display: none;
+}
+
+#menuControl+nav, #dropdownControl-1+div, #dropdownControl-2+div, #dropdownControl-3+div {
+	width: 100%;
+	display: none;
+}
+#menuControl:checked+nav, #dropdownControl-1:checked+div, #dropdownControl-2:checked+div, #dropdownControl-3:checked+div {
+	display: block;
+}
+
+#mainmenu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#mainmenu nav>a  {
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+#mainmenu nav>a:hover ,#dropdownControl-1+div a:hover, #dropdownControl-2+div a:hover, #dropdownControl-2+div a:hover {
+	background-color: #cccccc80;
+	border-bottom: 3px solid orange;
+}
+
+#mainmenu nav div {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 8px 0;
+}
+#mainmenu nav div>a {
+	border-radius: 50%;
+	border:thin solid #fff;
+	width: 35px;
+	height: 35px;
+	display: flex; justify-content: center; align-items: center;
+	margin: 0 8px;
+}
+
+
+#sec-1 .photo img {
+	width: 100%;
+}
+#sec-1 .photo article  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	color: #fff;
+}
+#sec-1 .photo article div {
+	position:absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	padding: 20px;
+}
+#sec-1 .photo article div i {
+	padding: 10px;
+	border: thin solid #fff;
+	border-radius: 50%;
+}
+#sec-1 .photo article div span {
+	padding-left: 5px;
+}
+#sec-1 .photo article aside {
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0 20px 20px 0;
+}
+article aside h3 {
+	width: 100%;
+	font-size: 1.3rem;
+}
+#sec-1 .photo article aside h3 {
+	text-transform: uppercase;
+}
+#sec-1 .photo article aside span{
+	text-transform: capitalize;
+	color: orange;
+}
+
+#sec-1 h4 {
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+#sec-1 h4 span  {
+	text-transform: capitalize;
+}
+#sec-1 h2{
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: 800;
+	color: white;
+}
+#sec-1 .container p{
+	color: white;
+	padding-bottom: 10px;
+}
+#sec-1 h2+h2{
+	margin-bottom: 20px;
+	color: orange;
+}
+#sec-1 .photo {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#sec-2 {
+	text-align: center;
+	margin: 50px 15px;
+}
+#sec-2 .container h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+#sec-2 .container h4 {
+	border-bottom: 3px solid rgb(255, 166, 0);
+	width: 200px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+#sec-3 .container {
+	text-align: center;
+}
+#sec-3 .container div a{
+	text-decoration: none;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #ccc;
+}
+#sec-3 .container div a:hover{
+	background-color: orange;
+	color: #fff;
+}
+#sec-3 section {
+	margin-top: 50px;
+}
+#sec-3 section img{
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 20px 0;
+}
+#sec-3 section article h2 {
+	margin: 30px 0 5px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+#sec-3 section article h4 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: orange;
+	font-weight: 200;
+}
+#sec-3 section article p {
+	margin-bottom: 20px;
+}
+#sec-4 {
+	background: url("../images/Services-bg.jpg") no-repeat center center/cover;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#sec-4 .container h2 {
+	color: #fff;
+	padding: 20px 0;
+	font-weight: 300;
+	font-size: 2rem;
+}
+#sec-4 .container h4 {
+	border-bottom: 3px solid rgb(255, 166, 0);
+	width: 200px;
+	text-align: center;
+	margin: 40px auto;
+}
+#sec-4 .container p {
+	color: #fff;
+}
+#sec-4 div a,#sec-4 div a span {
+	display: block;
+	align-items: center;
+}
+#sec-4 div a img {
+	padding-top: 40px;
+}
+#sec-4 div a span {
+	padding-top: 160px;
+}
+#sec-4 div a:first-child {
+	width: 245px;
+	height: 387px;
+	color: rgba(0, 0, 0, 0.3);
+	background: url("../images/Development-bg.jpg") no-repeat center center,url("../images/Development-cn.png") no-repeat center 10% ;
+	background-blend-mode: overlay;
+	margin: 20px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#sec-4 div a:first-child:hover {
+	height: 387px;
+	color: #fff;
+	background: url("../images/Development-bg.jpg") no-repeat center center,url("../images/Develop-hover-icn.png") no-repeat center 10%  ;
+}
+#sec-4 div a:nth-child(2) {
+	width: 245px;
+	height: 387px;
+	color: rgba(0, 0, 0, 0.3);
+	background: url("../images/desgin-bg.jpg") no-repeat center center,url("../images/desgin-icn.png") no-repeat center 10% ;
+	background-blend-mode: overlay;
+	margin: 20px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#sec-4 div a:nth-child(2):hover {
+	height: 387px;
+	color: #fff;
+	background: url("../images/desgin-bg.jpg") no-repeat center center,url("../images/desgin-hover-icn.png") no-repeat center 10%  ;
+}
+#sec-4 div a:nth-child(3) {
+	width: 245px;
+	height: 387px;
+	color: rgba(0, 0, 0, 0.3);
+	background: url("../images/concept-bg.jpg") no-repeat center center,url("../images/concept-icn.png") no-repeat center 10% ;
+	background-blend-mode: overlay;
+	margin: 20px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#sec-4 div a:nth-child(3):hover {
+	height: 387px;
+	color: #fff;
+	background: url("../images/concept-bg.jpg") no-repeat center center,url("../images/concept-hover-icn.png") no-repeat center 10%  ;
+}
+#sec-4 div a:nth-child(4) {
+	width: 245px;
+	height: 387px;
+	color: rgba(0, 0, 0, 0.3);
+	background: url("../images/systam-bg.jpg") no-repeat center center,url("../images/systam-icn.png") no-repeat center 10% ;
+	background-blend-mode: overlay;
+	margin: 20px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#sec-4 div a:nth-child(4):hover {
+	height: 387px;
+	color: #fff;
+	background: url("../images/systam-bg.jpg") no-repeat center center,url("../images/systam-hover-icn.png") no-repeat center 10%  ;
+}
+#sec-5 {
+	text-align: center;
+	margin: 50px 15px;
+}
+#sec-5 .container h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+#sec-5 .container h4 {
+	border-bottom: 3px solid rgb(255, 166, 0);
+	width: 200px;
+	text-align: center;
+	margin: 20px auto;
+}
+#dropdownControl-1+div a, #dropdownControl-2+div a, #dropdownControl-3+div a {
+	text-decoration: none;
+	text-transform: capitalize;
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+#dropdownControl-1+div a  {
+	
+}
+#sec-5 article  {
+	box-shadow: 0 0 10px #ccc;
+	color: black;
+	width: 50%;
+	margin: 0 auto;
+}
+#sec-5 article label {
+	display: block;
+	padding: 10px;
+	background-color: orange;
+}
+#sec-5 article div p:first-child {
+	background-color: black;
+	color: orange;
+	padding: 20px 10px;
+}
+#sec-5 article div p {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#sec-5 article div a:last-child {
+	background-color: black;
+	color: #fff;
+	border: 0;
+}
+#sec-5 article {
+	margin-bottom: 20px;
+}
+
+
+#sec-6 {
+	background: url("../images/Contact-bg.jpg");
+	color: #fff;
+	padding-bottom: 20px;
+}
+#sec-6 .container h2 {
+	text-align: center;
+	margin: 0 15px;
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding: 40px 0 20px;
+}
+#sec-6 .container h4 {
+	border-bottom: 3px solid rgb(255, 166, 0);
+	width: 200px;
+	text-align: center;
+	margin: 20px auto;
+}
+#sec-7 {
+	background-color: #000;
+	padding: 40px 0 60px;
+	color: #fff;
+}
+
+#sec-7 footer form input ,#sec-7 footer form textarea {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	text-transform: uppercase;
+}
+#sec-7 footer div h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding-top: 20px;
+	color: orange;
+}
+#sec-7 footer form button {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: orange;
+	color: #fff;
+	font-weight: 800;
+}
+#sec-7 footer div figure {
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+}
+#sec-7 footer div figure img {
+	width: 30px;
+	height: 27px;
+	margin-right: 30px;
+}
+#sec-7 footer div a {
+	margin-right: 10px;
+}
+
+
+
+
+@media (min-width:576px){
+}
+
+@media (min-width:768px){
+	.container{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#sec-4 .container {
+		width: 720px;
+		margin: 0 auto;
+	}
+	#sec-4 .container div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#sec-4 .container div a{
+		width: 50%;
+	}
+}
+@media (min-width:992px){
+	.container{
+		width: 940px;
+		margin: 0 auto;
+	}
+	
+		#mainmenu div.container {
+		flex-wrap: nowrap;
+	}
+	
+	#mainmenu label {
+		display: none;
+	}
+	#menuControl+nav, #menuControl:checked+nav, #dropdownControl-1+div, #dropdownControl-1:checked+div
+	, #dropdownControl-2+div, #dropdownControl-2:checked+div, #dropdownControl-3+div, #dropdownControl-3:checked+div
+	{
+		width: auto;
+		display: flex; align-items: center;
+	}
+	#sec-5 article{
+		display: flex;
+		width: 100%;
+	}
+	#sec-5 article div{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		text-align: center;
+	}
+	#sec-5 article div p{
+		border-right: 1px solid #ccc;
+		border-bottom: 0;
+		padding-right: 4%;
+	}
+	#sec-5 article div p:nth-child(5){
+		border-right: 0;
+	}
+	#sec-5 article div a{
+		
+		padding: 20px 10px;
+	}
+	#sec-5 article label{
+		width: 80px;
+	}
+	#mainmenu nav div {
+		width: auto;
+	}
+	#mainmenu nav>a {
+		padding: 10px;
+	}
+	
+	#sec-1 {
+		display: flex;
+		position: relative;
+		width: 1000px;
+		margin: 0 auto;
+		padding: 80px 0;
+		
+	}
+	#sec-1 .container {
+		width: 30%;
+	}
+	#sec-1 .photo {
+		width: 60%;
+	}
+	#sec-1 h2{
+		font-size: 2rem;
+	}
+	#sec-2 .container, #sec-6 .container {
+		width: 940px;
+		margin: 0 auto;
+	}
+	#sec-3 section {
+		width: 940px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	#sec-3 section img{
+		display: block;
+		width: 49%;
+	}
+	#sec-3 section article {
+		width: 49%;
+		text-align: start;
+	}
+	#sec-4 .container {
+		width: 940px;
+		margin: 0 auto;
+	}
+	#sec-7 footer {
+		width: 940px;
+		margin: 0 auto;
+	}
+
+
+
+}
+@media (min-width:1200px){
+	.container{
+		width: 1140px;
+	}
+	#sec-4 .container div a{
+		width: 22%;
+	}
+	#sec-7 footer {
+		display: flex;
+		justify-content: space-between;
+	}
+	#sec-7 footer form{
+		width: 49%;
+	}
+	#sec-7 footer div{
+		width: 49%;
+	}
+}
+@media (min-width:1400px){
+	.container{
+		width: 1340px;
+	}
+
+}
+
