@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 200px;
+}
+section {
+    width: 175px;
+    height: 244px;
+    position: relative;
+    transition: 2s ease all;
+    transform-style: preserve-3d;
+}
+div {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.div1 {
+    width: 175px;
+    height: 244px;
+    background: url("../Image20230612105400.png") no-repeat;
+    transform: rotateX(180deg);
+}
+.div2 {
+    width: 175px;
+    height: 244px;
+    background: url("../Image20230612105346.png") no-repeat;
+}
+section:hover {
+    transform: rotateX(180deg);
+}
+section:active {
+    transform: rotateZ(180deg);
+}
+.div1:active{
+    transform: rotateZ(180deg);
+}
+div:active {
+    backface-visibility: visible;
+}
